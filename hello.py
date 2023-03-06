@@ -1,19 +1,10 @@
-class Flight():
-    def __init__(self, capacity):
-        self.capacity= capacity
-        self.passengers = []
-    
-    def add_passenger(self, name):
-        self.passengers.append(name)
-    
-    def open_seats(self):
-        return self.capacity - len(self.passengers)
+x = int(input("x: "))
+y = int(input("y: "))
 
-flight = Flight(3)
+try:
+    result = x / y
+except ZeroDivisionError:
+    print(" you can't devide by Zero")
+    sys.exit(1)
 
-people = ["Harry", "ron", "Hermione", "Ginny"]
-for person in people:
-    if flight.add_passenger(person):
-        print(f"Added {person} to flight successfully.")
-    else:
-        print(f"No available seats for {person}")
+print(f"{x} / {y} = {result}")
