@@ -1,5 +1,3 @@
-def square(x):
-    return x * x
-
-for i in range(10):
-    print(f"The square of {i} is {square(i)}")
+class Flight():
+    def __init__(self, capacity):
+        self.capacity= capa
