@@ -7,3 +7,6 @@ def index(request):
 
 def yasin(request):
     return HttpResponse("Hello, Yasin")
+
+def greet(request, name):
+    return HttpResponse(f"hello, {name}")
