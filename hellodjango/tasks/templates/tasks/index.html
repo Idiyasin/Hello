@@ -8,9 +8,9 @@
 </head>
 <body>
     <ul>
-        <li>hey</li>
-        <li>hey</li>
-        <li>hey</li>
+        {% for task in tasks %}
+            <li>{{ task }}</li>
+        {% endfor %}
     </ul>
 </body>
 </html>
