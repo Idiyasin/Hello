@@ -5,7 +5,6 @@ tasks = ["hey", "hello", "nice"]
 
 class NewTaskForm(forms.Form):
     task = forms.CharField(label="New TTask")
-    priority = forms.IntegerField(label="priority", min_value=1, max_value=10)
 
 # Create your views here.
 def index(request):
